@@ -8,7 +8,6 @@ const FilterSidebar = () => {
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [sortOption, setSortOption] = useState("Recommended");
 
-  // Fetch data from API
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("https://fakestoreapi.com/products");
@@ -20,7 +19,6 @@ const FilterSidebar = () => {
     fetchData();
   }, []);
 
-  // Sort products based on the selected option
   const handleSort = (option) => {
     let sortedProducts = [...products];
 
@@ -40,7 +38,6 @@ const FilterSidebar = () => {
 
   return (
     <div className="filter-sidebar">
-      {/* Top Header */}
       <div className="filter-header">
         <div>
           <span>{products.length} ITEMS</span>
@@ -67,12 +64,10 @@ const FilterSidebar = () => {
         </div>
       </div>
 
-      {/* Filter Items */}
       {isFiltersVisible && (
-        <div>{/* Your customizable and other filters code */}</div>
+        <div></div>
       )}
 
-      {/* Display Products */}
       <div className="product-list">
         {displayedProducts.map((product) => (
           <div key={product.id} className="product-item">

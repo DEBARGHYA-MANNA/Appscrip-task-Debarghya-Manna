@@ -9,7 +9,6 @@ const Products = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isFiltersVisible, setIsFiltersVisible] = useState(true);
 
-  // Filters state
   const defaultFilters = {
     customizable: false,
     idealFor: "All",
@@ -178,7 +177,6 @@ const Products = () => {
         )}
       </div>
 
-      {/* Overlay Effect */}
       {!isFiltersVisible && <div className="overlay"></div>}
 
       <div

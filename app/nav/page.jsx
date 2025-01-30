@@ -1,4 +1,3 @@
-// nav/page.jsx
 import React from "react";
 import "./nav.css";
 import Image from "next/image";
@@ -10,7 +9,6 @@ import {
 } from "react-icons/fa";
 
 import logo from "../../public/assets/BrandLogo.png";
-// import Menu from "../components/menu";
 
 const Navbar = () => {
   return (
@@ -53,7 +51,6 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-links">
-        {/* <Menu /> */}
         
           <ul>
             <li>

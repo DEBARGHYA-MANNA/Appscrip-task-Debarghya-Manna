@@ -1,4 +1,3 @@
-/* nav.css */
 .navbar-box {
     background-color: #fff;
     padding: 10px 20px;
@@ -64,7 +63,6 @@
 
 .navbar-links li a:hover {
     color: #007bff;
-    /* Blue color on hover */
 }
 
 .navbar-right {
@@ -139,8 +137,6 @@
     text-align: center;
     align-items: center;
 }
-
-/* Media Queries for Mobile and Tablet */
 
 @media (max-width: 1024px) {
     .navbar-links ul {
